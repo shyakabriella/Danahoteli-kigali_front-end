@@ -217,25 +217,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Spa */}
-      <section id="spa" className="grid md:grid-cols-2 min-h-[600px] overflow-hidden">
-        <Reveal animation="fade-in" className="overflow-hidden">
-          <img src={spa} alt="Candle-lit spa room" loading="lazy" className="w-full h-full object-cover min-h-[400px] hover:scale-105 transition duration-[1.5s]" />
-        </Reveal>
-        <Reveal animation="slide-in-right" className="bg-navy-deep text-cream">
-          <div className="p-12 md:p-20 flex flex-col justify-center h-full">
-            <p className="text-gold tracking-[0.3em] text-sm mb-4">— RELAXING MOMENTS</p>
-            <h2 className="font-display text-4xl md:text-5xl mb-6">Spa &amp; Thermal Center.</h2>
-            <p className="text-cream/70 mb-8 leading-relaxed">A subterranean retreat of stone, candlelight and water — designed for stillness.</p>
-            <ul className="space-y-3 mb-10">
-              {["Ancient thermal baths", "Hammam & sauna", "Therapeutic massage rituals", "Private treatment suites"].map((i) => (
-                <li key={i} className="flex items-center gap-3"><Check className="w-5 h-5 text-gold" />{i}</li>
-              ))}
-            </ul>
-            <Button className="bg-gold hover:bg-gold-light text-navy-deep rounded-none w-fit px-8 transition-transform hover:-translate-y-1">Reserve Treatment</Button>
-          </div>
-        </Reveal>
-      </section>
+      
 
       {/* Gallery */}
       <section className="py-32 container">
