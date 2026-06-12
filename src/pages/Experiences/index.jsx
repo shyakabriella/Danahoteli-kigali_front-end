@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Mountain, UtensilsCrossed, Sparkles, Waves, Wind, Wine } from "lucide-react";
 import SiteNav, { BRAND } from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
-import hero from "@/assets/hero-hotel.jpg";
-import dining from "@/assets/dining.jpg";
-import spa from "@/assets/spa.jpg";
-import stargazing from "@/assets/stargazing.jpg";
-import yoga from "@/assets/yoga.jpg";
-import wineTasting from "@/assets/wine-tasting.jpg";
-import terrace from "@/assets/terrace.jpg";
+const hero = "/Danakigali-photos-021.jpg";
+const dining = "/Danakigali-photos-011.jpg";
+const spa = "/Danakigali-photos-005.jpg";
+const stargazing = "/Danakigali-photos-023.jpg";
+const yoga = "/Danakigali-photos-024.jpg";
+const wineTasting = "/Danakigali-photos-016.jpg";
+const terrace = "/Danakigali-photos-008.jpg";
 
 const experiences = [
   {

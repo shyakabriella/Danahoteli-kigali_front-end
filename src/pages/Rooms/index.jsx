@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Bed, Maximize2, Users, Bath } from "lucide-react";
 import SiteNav, { BRAND } from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
-import hero from "@/assets/hero-hotel.jpg";
-import roomDeluxe from "@/assets/room-deluxe.jpg";
-import roomDouble from "@/assets/room-double.jpg";
-import roomSuperior from "@/assets/room-superior.jpg";
-import roomSingle from "@/assets/room-single.jpg";
-import roomPenthouse from "@/assets/room-penthouse.jpg";
+const hero = "/Danakigali-photos-021.jpg";
+const roomDeluxe = "/Danakigali-photos-013.jpg";
+const roomDouble = "/Danakigali-photos-016.jpg";
+const roomSuperior = "/Danakigali-photos-023.jpg";
+const roomSingle = "/Danakigali-photos-024.jpg";
+const roomPenthouse = "/Danakigali-photos-024.jpg";
 
 const rooms = [
   { img: roomSingle, name: "Alpine Single", price: 60, size: "24m²", beds: "1 queen", guests: 1, baths: 1, cat: "single", tag: "Cosy" },

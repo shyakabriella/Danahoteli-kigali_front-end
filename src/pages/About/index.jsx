@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Award, Heart, Users, Globe, Home, Coffee, Gift } from "lucide-react";
 import SiteNav, { BRAND } from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
-import hero from "@/assets/hero-hotel.jpg";
-import terrace from "@/assets/terrace.jpg";
-import dining from "@/assets/dining.jpg";
-import team1 from "@/assets/team-1.jpg";
-import team2 from "@/assets/team-2.jpg";
-import team3 from "@/assets/team-3.jpg";
+const hero = "/Danakigali-photos-021.jpg";
+const terrace = "/Danakigali-photos-008.jpg";
+const dining = "/Danakigali-photos-011.jpg";
+const team1 = "/Danakigali-photos-013.jpg";
+const team2 = "/Danakigali-photos-014.jpg";
+const team3 = "/Danakigali-photos-015.jpg";
 
 const values = [
   { icon: Heart, title: "Kindness", text: "Inspired by Dana's spirit of warmth and care, we welcome every guest with genuine kindness." },

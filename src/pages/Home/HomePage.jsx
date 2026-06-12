@@ -4,14 +4,14 @@ import { Wifi, Coffee, ShieldCheck, Bath, Bell, Car, Check, Star, Mountain, Uten
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import Reveal from "@/components/Reveal";
-import hero from "@/assets/hero-hotel.jpg";
-import roomDeluxe from "@/assets/room-deluxe.jpg";
-import roomDouble from "@/assets/room-double.jpg";
-import roomSuperior from "@/assets/room-superior.jpg";
-import spa from "@/assets/spa.jpg";
-import pool from "@/assets/pool.jpg";
-import dining from "@/assets/dining.jpg";
-import terrace from "@/assets/terrace.jpg";
+const hero = "/Danakigali-photos-021.jpg";
+const roomDeluxe = "/Danakigali-photos-012.jpg";
+const roomDouble = "/Danakigali-photos-017.jpg";
+const roomSuperior = "/Danakigali-photos-022.jpg";
+const spa = "/Danakigali-photos-005.jpg";
+const pool = "/Danakigali-photos-021.jpg";
+const dining = "/Danakigali-photos-011.jpg";
+const terrace = "/Danakigali-photos-008.jpg";
 
 const BRAND = "DANA KIGALI HOTEL";
 

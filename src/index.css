@@ -9,18 +9,18 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 35 30% 97%;
-    --foreground: 215 35% 12%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    --navy: 215 40% 14%;
-    --navy-deep: 215 45% 9%;
-    --gold: 38 55% 52%;
-    --gold-light: 40 65% 68%;
-    --cream: 35 35% 94%;
+    --navy: 0 0% 30%;
+    --navy-deep: 0 0% 0%;
+    --gold: 24 98% 53%;
+    --gold-light: 24 98% 63%;
+    --cream: 0 0% 100%;
 
-    --gradient-hero: linear-gradient(180deg, hsl(215 45% 9% / 0.2) 0%, hsl(215 45% 9% / 0.85) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(38 55% 52%), hsl(40 65% 68%));
-    --shadow-luxe: 0 30px 60px -20px hsl(215 45% 9% / 0.4);
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 0% / 0.2) 0%, hsl(0 0% 0% / 0.85) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(24 98% 53%), hsl(24 98% 63%));
+    --shadow-luxe: 0 30px 60px -20px hsl(0 0% 0% / 0.4);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
