@@ -1,64 +1,66 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Mountain, UtensilsCrossed, Sparkles, Waves, Wind, Wine } from "lucide-react";
+import { Heart, Coffee, Sun, Home } from "lucide-react";
 import SiteNav, { BRAND } from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+
 const hero = "/Danakigali-photos-021.jpg";
-const dining = "/Danakigali-photos-011.jpg";
-const spa = "/Danakigali-photos-005.jpg";
-const stargazing = "/Danakigali-photos-023.jpg";
-const yoga = "/Danakigali-photos-024.jpg";
-const wineTasting = "/Danakigali-photos-016.jpg";
-const terrace = "/Danakigali-photos-008.jpg";
+const balcony = "/Danakigali-photos-011.jpg";
+const fruitPlate = "/Danakigali-photos-005.jpg";
+const sunlitRoom = "/Danakigali-photos-023.jpg";
+const breezyRoom = "/Danakigali-photos-024.jpg";
+const suiteLiving = "/Danakigali-photos-016.jpg";
+const housekeeping = "/Danakigali-photos-008.jpg";
 
 const experiences = [
   {
-    icon: Mountain,
-    title: "Mountain Trails",
-    tag: "Adventure",
-    img: terrace,
-    text: "Guided hikes along the ridgeline at first light, with a thermos of fresh coffee. Routes range from gentle forest walks to summit scrambles, each led by a local who knows every switchback.",
-    detail: "Available daily · 2–6 hours · All fitness levels",
+    icon: Heart,
+    title: "Impeccable Service",
+    tag: "Hospitality",
+    img: housekeeping,
+    text: "Experience genuine Rwandan hospitality from the moment you arrive. Our dedicated team ensures your room is a pristine sanctuary, with attention to every detail for your ultimate comfort.",
+    detail: "Daily housekeeping · 24/7 reception · Attention to detail",
+  },
+  {
+    icon: Coffee,
+    title: "Private Balconies",
+    tag: "Relaxation",
+    img: balcony,
+    text: "Step outside to your private balcony and take in the fresh Kigali air. It's the perfect spot to enjoy your morning coffee, read a book, or simply unwind after a day of exploring the city.",
+    detail: "City views · Outdoor seating · Peaceful ambiance",
+  },
+  {
+    icon: Sun,
+    title: "Sunlit Rooms",
+    tag: "Comfort",
+    img: sunlitRoom,
+    text: "Wake up to abundant natural light streaming through large windows. Our rooms are designed to feel bright, airy, and welcoming, providing a cheerful start to your day.",
+    detail: "Large windows · Natural lighting · Refreshing atmosphere",
   },
   {
     icon: UtensilsCrossed,
-    title: "Cliffside Dining",
-    tag: "Culinary",
-    img: dining,
-    text: "Seasonal tasting menus served by candlelight above the valley. Our Executive Chef sources from valley farms and mountain foragers, composing dishes that change with the week.",
-    detail: "Wed–Sun evenings · 7-course tasting · Wine pairing",
-  },
-  {
-    icon: Sparkles,
-    title: "Stargazing Nights",
-    tag: "Wonder",
-    img: stargazing,
-    text: "A private rooftop, warm blankets, and a sky uncluttered by city light. Our astronomer guides you through constellations with a telescope and stories older than the ridge itself.",
-    detail: "Clear evenings · 2 hours · Includes warm drinks",
-  },
-  {
-    icon: Waves,
-    title: "Thermal Rituals",
-    tag: "Wellness",
-    img: spa,
-    text: "Descend into a subterranean world of stone, water, and candlelight. Ancient thermal baths, hammam sessions, and therapeutic massages designed to dissolve tension.",
-    detail: "Daily 10am–8pm · Treatments 60–120 min",
+    title: "Fresh Local Breakfast",
+    tag: "Dining",
+    img: fruitPlate,
+    text: "Start your morning with a selection of fresh, locally sourced tropical fruits. We take pride in offering delicious, healthy options that showcase the vibrant flavors of the region.",
+    detail: "Daily breakfast · Local ingredients · Fresh tropical fruits",
   },
   {
     icon: Wind,
-    title: "Forest Yoga",
-    tag: "Mindfulness",
-    img: yoga,
-    text: "Morning sessions on a timber deck surrounded by pines and mist. Our instructor adapts each class to the group — from restorative stretches to flowing vinyasa.",
-    detail: "Daily sunrise · 60 min · All levels welcome",
+    title: "Restful Sleep",
+    tag: "Tranquility",
+    img: breezyRoom,
+    text: "Enjoy a deep, restful sleep in our comfortable beds. Feel the gentle breeze flow through your room, creating a serene and calming environment perfect for relaxation.",
+    detail: "Premium bedding · Quiet environment · Natural ventilation",
   },
   {
-    icon: Wine,
-    title: "Cellar Tastings",
-    tag: "Culture",
-    img: wineTasting,
-    text: "Explore the valley's wine heritage in our stone cellar. Guided tastings of regional vintages, paired with local cheeses and the stories of the families who made them.",
-    detail: "Fri–Sun afternoons · 90 min · Reservations required",
+    icon: Home,
+    title: "Spacious Suites",
+    tag: "Accommodation",
+    img: suiteLiving,
+    text: "Spread out and feel at home in our generously sized suites. Featuring separate living areas, they offer ample space for families or guests who desire extra room to relax or work.",
+    detail: "Separate living areas · Comfortable seating · Ideal for extended stays",
   },
 ];
 
@@ -85,9 +87,9 @@ const Experiences = () => {
       {/* Intro */}
       <section className="py-20 container text-center max-w-3xl mx-auto">
         <p className="text-gold tracking-[0.3em] text-sm mb-4">— SIX WAYS TO REMEMBER</p>
-        <h2 className="font-display text-4xl md:text-5xl mb-6">Days that linger.</h2>
+        <h2 className="font-display text-4xl md:text-5xl mb-6">Memories that linger.</h2>
         <p className="text-muted-foreground leading-relaxed">
-          At {BRAND}, the landscape is not a backdrop — it is the main event. Each experience is designed to draw you deeper into the ridge, the forest, and the quiet rhythm of mountain life.
+          At {BRAND}, your comfort is our priority. Each experience is designed to provide you with a relaxing, welcoming, and memorable stay in the heart of Kigali.
         </p>
       </section>
 
@@ -129,7 +131,7 @@ const Experiences = () => {
           <p className="text-gold tracking-[0.3em] text-sm mb-4">— BEGIN YOUR STORY</p>
           <h2 className="font-display text-4xl md:text-5xl mb-6">Reserve your first experience.</h2>
           <p className="text-cream/70 mb-10 leading-relaxed">
-            Many experiences are exclusive to guests. Book a room and unlock the full ridge.
+            Many of our rooms and suites are exclusive to guests. Book a room and unlock true comfort.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button className="bg-gold hover:bg-gold-light text-navy-deep rounded-none px-8">Reserve a Stay</Button>
