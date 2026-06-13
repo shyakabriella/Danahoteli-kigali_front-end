@@ -14,7 +14,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    lines: ["KG 7 Ave, Kigali", "Rwanda"],
+    lines: ["3 KG 303 St, Kigali", "Rwanda"],
   },
   {
     icon: Phone,
@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    lines: ["stay@danakigali.rw", "hello@danakigali.rw"],
+    lines: [" danakigalihotel@gmail.com"],
   },
   {
     icon: Clock,
@@ -182,7 +182,7 @@ const Contact = () => {
                 />
               </div>
               <p className="text-xs text-muted-foreground mt-3 flex items-center gap-1">
-                <MapPin className="w-3 h-3" /> KG 7 Ave, Kigali, Rwanda
+                <MapPin className="w-3 h-3" />3 KG 303 St, Kigali, Rwanda
               </p>
             </Reveal>
 

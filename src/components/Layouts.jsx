@@ -55,12 +55,12 @@ function MobileBottomBar() {
           </span>
         </a>
 
-        <Link
-          to="/rooms"
+        <button
+          onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')}
           className="flex items-center justify-center bg-gold hover:bg-gold-light text-navy-deep px-4 text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors"
         >
           Book Now
-        </Link>
+        </button>
       </div>
     </div>
   );

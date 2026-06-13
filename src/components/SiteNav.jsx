@@ -63,7 +63,7 @@ const SiteNav = ({ variant = "overlay" }) => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button className="hidden sm:inline-flex bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6">
+          <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} className="hidden sm:inline-flex bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6">
             Book Now
           </Button>
           <button
@@ -95,7 +95,7 @@ const SiteNav = ({ variant = "overlay" }) => {
               {l.label}
             </NavLink>
           ))}
-          <Button className="sm:hidden bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6 w-fit">
+          <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} className="sm:hidden bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6 w-fit">
             Book Now
           </Button>
         </nav>

@@ -85,7 +85,6 @@ const Rooms = () => {
                 <span className="absolute top-4 left-4 bg-gold text-navy-deep text-xs tracking-widest uppercase px-3 py-1 font-semibold">{r.tag}</span>
               </div>
               <div className="p-8 flex-1 flex flex-col">
-                <p className="text-gold text-sm mb-2">From ${r.price}/night</p>
                 <h3 className="font-display text-2xl mb-4">{r.name}</h3>
                 <div className="grid grid-cols-2 gap-3 text-sm text-muted-foreground mb-6">
                   <div className="flex items-center gap-2"><Maximize2 className="w-4 h-4 text-gold" />{r.size}</div>
@@ -93,7 +92,7 @@ const Rooms = () => {
                   <div className="flex items-center gap-2"><Users className="w-4 h-4 text-gold" />{r.guests} guests</div>
                   <div className="flex items-center gap-2"><Bath className="w-4 h-4 text-gold" />{r.baths} bath</div>
                 </div>
-                <Button variant="outline" className="rounded-none border-navy text-navy hover:bg-navy hover:text-cream w-full mt-auto">
+                <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} variant="outline" className="rounded-none border-navy text-navy hover:bg-navy hover:text-cream w-full mt-auto">
                   Book Now
                 </Button>
               </div>

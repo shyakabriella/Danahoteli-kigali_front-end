@@ -54,7 +54,7 @@ const SiteFooter = () => {
           <ul className="space-y-4 text-sm text-gray-600">
             <li className="flex items-start gap-3">
               <MapPin className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-              <span>KG 7 Ave, Kigali, Rwanda</span>
+              <span> 3 KG 303 St, Kigali, Rwanda</span>
             </li>
             <li className="flex items-start gap-3">
               <Phone className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
@@ -62,7 +62,7 @@ const SiteFooter = () => {
             </li>
             <li className="flex items-start gap-3">
               <Mail className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-              <span>stay@danakigali.rw</span>
+              <span>danakigalihotel@gmail.com</span>
             </li>
           </ul>
         </div>

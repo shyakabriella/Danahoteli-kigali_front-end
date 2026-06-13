@@ -165,10 +165,9 @@ const Index = () => {
                     <img src={r.img} alt={r.name} loading="lazy" className="w-full h-72 object-cover group-hover:scale-110 transition duration-[1.2s]" />
                   </div>
                   <div className="p-8">
-                    <p className="text-gold text-sm mb-2">From ${r.price}/night</p>
                     <h3 className="font-display text-2xl mb-2">{r.name}</h3>
                     <p className="text-sm text-muted-foreground mb-6">{r.meta}</p>
-                    <Button variant="outline" className="rounded-none border-navy text-navy hover:bg-navy hover:text-cream w-full">Book Now</Button>
+                    <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} variant="outline" className="rounded-none border-navy text-navy hover:bg-navy hover:text-cream w-full">Book Now</Button>
                   </div>
                 </article>
               </Reveal>
