@@ -216,7 +216,7 @@ const Index = () => {
         </div>
       </section>
 
-      
+
 
       {/* Gallery */}
       <section className="py-32 container">
@@ -264,7 +264,7 @@ const Index = () => {
         <Reveal className="container">
           <p className="text-gold tracking-[0.3em] text-sm mb-4">— MEETINGS &amp; EVENTS</p>
           <h2 className="font-display text-4xl md:text-5xl mb-8 max-w-3xl mx-auto">A warm, exquisite, and elevated space for occasions of every scale.</h2>
-          <Button size="lg" className="bg-gold hover:bg-gold-light text-navy-deep rounded-none px-10 transition-transform hover:-translate-y-1">Plan Your Event</Button>
+          <Button size="lg" onClick={() => window.open('https://direct-book.com/properties/danakigalihotel/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no', '_blank')} className="bg-gold hover:bg-gold-light text-navy-deep rounded-none px-10 transition-transform hover:-translate-y-1">Plan Your Event</Button>
         </Reveal>
       </section>
 

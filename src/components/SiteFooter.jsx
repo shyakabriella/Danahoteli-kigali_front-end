@@ -58,7 +58,7 @@ const SiteFooter = () => {
             </li>
             <li className="flex items-start gap-3">
               <Phone className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
-              <span>+250 788 000 000</span>
+              <span> +250788471880</span>
             </li>
             <li className="flex items-start gap-3">
               <Mail className="w-4 h-4 text-orange-500 shrink-0 mt-0.5" />
