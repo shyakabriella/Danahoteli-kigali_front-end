@@ -37,7 +37,7 @@ const SiteFooter = () => {
               { to: "/about", label: "About Us" },
               { to: "/rooms", label: "Rooms & Suites" },
               { to: "/experiences", label: "Experiences" },
-              { to: "/contact", label: "Contact" },
+              { to: "https://direct-book.com/properties/danakigalihotel/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no", label: "Contact" },
             ].map((l) => (
               <li key={l.to}>
                 <Link to={l.to} className="hover:text-orange-500 transition">
@@ -72,10 +72,7 @@ const SiteFooter = () => {
           <h3 className="text-xs tracking-[0.3em] uppercase text-orange-500 mb-6">Policies</h3>
           <ul className="space-y-3 text-sm text-gray-600">
             {[
-              { to: "/privacy-policy", label: "Privacy Policy" },
-              { to: "/terms-conditions", label: "Terms & Conditions" },
-              { to: "/cancellation-policy", label: "Cancellation Policy" },
-              { to: "/cookie-policy", label: "Cookie Policy" },
+              { to: "https://direct-book.com/properties/danakigalihotel/policies?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no", label: "Privacy Policy" },
             ].map((item) => (
               <li key={item.to}>
                 <Link to={item.to} className="hover:text-orange-500 transition">
