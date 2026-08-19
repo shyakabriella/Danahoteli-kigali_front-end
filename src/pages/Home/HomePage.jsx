@@ -5,6 +5,7 @@ import { Wifi, Coffee, Bell, Car, Check, Star, Mountain, UtensilsCrossed, Sparkl
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import Reveal from "@/components/Reveal";
+import { getBookingUrl, BOOKING_ROOT } from "@/lib/booking";
 const hero = "/Danakigali-photos-021.jpg";
 const roomDeluxe = "/Danakigali-photos-013.jpg";
 const roomDouble = "/Danakigali-photos-016.jpg";
@@ -17,9 +18,9 @@ const terrace = "/Danakigali-photos-008.jpg";
 const BRAND = "DANA KIGALI HOTEL";
 
 const rooms = [
-  { img: roomDouble, name: "Deluxe Double room", price: 90, beds: '1 double bed', guests: 2, baths: 1, cat: 'double', tag: 'Most loved' },
-  { img: roomDeluxe, name: "Deluxe Twin Room", price: 90, beds: '2 twin beds', guests: 2, baths: 1, cat: 'twin', tag: 'Best value' },
-  { img: roomSuperior, name: "Family Room", price: 140, beds: '3 beds', guests: 4, baths: 2, cat: 'family', tag: 'Spacious' },
+  { img: roomDouble,   name: "Deluxe Double room", price: 90,  beds: '1 double bed', guests: 2, baths: 1, cat: 'double', tag: 'Most loved', meta: '1 double bed · 2 guests' },
+  { img: roomDeluxe,   name: "Deluxe Twin Room",   price: 90,  beds: '2 twin beds',  guests: 2, baths: 1, cat: 'twin',   tag: 'Best value', meta: '2 twin beds · 2 guests' },
+  { img: roomSuperior, name: "Family Room",         price: 140, beds: '3 beds',       guests: 4, baths: 2, cat: 'family', tag: 'Spacious',   meta: '3 beds · 4 guests'   },
 ];
 
 const facilities = [
@@ -85,7 +86,7 @@ const Index = () => {
             className="flex flex-col sm:flex-row items-start sm:items-center gap-10 animate-fade-in-up"
             style={{ animationDelay: "700ms" }}
           >
-            <button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-16&checkOutDate=2026-06-17&trackPage=no', '_blank')} className="group relative bg-gold text-cream px-14 py-6 text-[11px] uppercase tracking-[0.25em] font-bold overflow-hidden shadow-2xl transition-transform hover:-translate-y-1">
+            <button onClick={() => window.open(getBookingUrl(), '_blank')} className="group relative bg-gold text-cream px-14 py-6 text-[11px] uppercase tracking-[0.25em] font-bold overflow-hidden shadow-2xl transition-transform hover:-translate-y-1">
               <span className="relative z-10">Reserve a Stay</span>
               <div className="absolute inset-0 bg-navy translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             </button>
@@ -138,7 +139,7 @@ const Index = () => {
                   <div className="p-8">
                     <h3 className="font-display text-2xl mb-2">{r.name}</h3>
                     <p className="text-sm text-muted-foreground mb-6">{r.meta}</p>
-                    <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} variant="outline" className="rounded-none border-navy text-navy hover:bg-navy hover:text-cream w-full">Book Now</Button>
+                    <Button onClick={() => window.open(BOOKING_ROOT, '_blank')} variant="outline" className="rounded-none border-navy text-navy hover:bg-navy hover:text-cream w-full">Book Now</Button>
                   </div>
                 </article>
               </Reveal>
@@ -237,7 +238,7 @@ const Index = () => {
         <Reveal className="container">
           <p className="text-gold tracking-[0.3em] text-sm mb-4">— MEETINGS &amp; EVENTS</p>
           <h2 className="font-display text-2xl md:text-3xl mb-8 max-w-3xl mx-auto">A warm, exquisite, and elevated space for occasions of every scale.</h2>
-          <Button size="lg" onClick={() => window.open('https://direct-book.com/properties/danakigalihotel/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no', '_blank')} className="bg-gold hover:bg-gold-light text-navy-deep rounded-none px-10 transition-transform hover:-translate-y-1">Plan Your Event</Button>
+          <Button size="lg" onClick={() => window.open(getBookingUrl('contact'), '_blank')} className="bg-gold hover:bg-gold-light text-navy-deep rounded-none px-10 transition-transform hover:-translate-y-1">Plan Your Event</Button>
         </Reveal>
       </section>
 

@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { cn } from "../lib/utils";
+import { BOOKING_ROOT } from "../lib/booking";
 
 export const BRAND = "DANA KIGALI HOTEL";
 export const BRAND_SHORT = "DANA";
@@ -12,7 +13,7 @@ const links = [
   { to: "/about", label: "About" },
   { to: "/rooms", label: "Rooms" },
   { to: "/experiences", label: "Experiences" },
-  { to: "https://direct-book.com/properties/danakigalihotel/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no", label: "Contact" },
+  { to: "/contact", label: "Contact" },
 ];
 
 const SiteNav = () => {
@@ -59,7 +60,7 @@ const SiteNav = () => {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} className="hidden sm:inline-flex bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6">
+          <Button onClick={() => window.open(BOOKING_ROOT, '_blank')} className="hidden sm:inline-flex bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6">
             Book Now
           </Button>
           <button
@@ -91,7 +92,7 @@ const SiteNav = () => {
               {l.label}
             </NavLink>
           ))}
-          <Button onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')} className="sm:hidden bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6 w-fit">
+          <Button onClick={() => window.open(BOOKING_ROOT, '_blank')} className="sm:hidden bg-gold hover:bg-gold-light text-navy-deep font-semibold rounded-none px-6 w-fit">
             Book Now
           </Button>
         </nav>

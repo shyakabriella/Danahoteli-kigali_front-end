@@ -1,6 +1,6 @@
 import React from "react";
-import { Outlet, useLocation, Link } from "react-router-dom";
-import Footer from "./Footer";
+import { Outlet, useLocation } from "react-router-dom";
+import { BOOKING_ROOT } from "../lib/booking";
 
 function MobileBottomBar() {
   const handleOpenMenu = () => {
@@ -56,7 +56,7 @@ function MobileBottomBar() {
         </a>
 
         <button
-          onClick={() => window.open('https://direct-book.com/properties/danakigalihotel', '_blank')}
+          onClick={() => window.open(BOOKING_ROOT, '_blank')}
           className="flex items-center justify-center bg-gold hover:bg-gold-light text-navy-deep px-4 text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors"
         >
           Book Now

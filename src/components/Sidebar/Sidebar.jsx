@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
 import {
   LayoutDashboard,
   Files,
@@ -11,6 +12,9 @@ import {
 } from 'lucide-react';
 
 const Sidebar = ({ onClose }) => {
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+
   const menuItems = [
     { name: 'CMS Overview', icon: <LayoutDashboard size={20} />, path: '/dashboard' },
     { name: 'Pages', icon: <Files size={20} />, path: '/dashboard/pages' },
@@ -21,6 +25,12 @@ const Sidebar = ({ onClose }) => {
 
   const baseLink = 'flex items-center gap-4 px-4 py-3.5 rounded-lg text-[0.95rem] font-medium text-[hsl(var(--sidebar-foreground))] transition-all duration-200 hover:bg-[hsl(var(--sidebar-accent))]';
   const activeLink = 'bg-gradient-to-br from-[hsl(24,98%,53%)] to-[hsl(24,98%,63%)] !text-white shadow-[0_4px_15px_-3px_hsl(24,98%,53%,0.3)]';
+
+  function handleLogout() {
+    logout();          // clears localStorage session
+    onClose?.();
+    navigate('/login');
+  }
 
   return (
     <aside className="w-64 h-screen bg-[hsl(var(--sidebar-background))] border-r border-[hsl(var(--sidebar-border))] flex flex-col px-4 py-6 shrink-0">
@@ -65,14 +75,13 @@ const Sidebar = ({ onClose }) => {
       </nav>
 
       <div className="mt-auto pt-6 border-t border-[hsl(var(--sidebar-border))]">
-        <NavLink
-          to="/login"
-          onClick={onClose}
-          className="flex items-center gap-4 px-4 py-3.5 rounded-lg text-[0.95rem] font-medium text-[hsl(var(--sidebar-foreground))] transition-all duration-200 hover:text-red-500 hover:bg-red-50"
+        <button
+          onClick={handleLogout}
+          className="w-full flex items-center gap-4 px-4 py-3.5 rounded-lg text-[0.95rem] font-medium text-[hsl(var(--sidebar-foreground))] transition-all duration-200 hover:text-red-500 hover:bg-red-50"
         >
           <LogOut size={20} />
           <span>Logout</span>
-        </NavLink>
+        </button>
       </div>
     </aside>
   );

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { BRAND, BRAND_SHORT } from "./SiteNav";
 import { MapPin, Phone, Mail, Share2, Globe, MessageSquare } from "lucide-react";
+import { getBookingUrl, BOOKING_ROOT } from "../lib/booking";
 
 const SiteFooter = () => {
   return (
@@ -37,7 +38,7 @@ const SiteFooter = () => {
               { to: "/about", label: "About Us" },
               { to: "/rooms", label: "Rooms & Suites" },
               { to: "/experiences", label: "Experiences" },
-              { to: "https://direct-book.com/properties/danakigalihotel/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no", label: "Contact" },
+              { to: "/contact", label: "Contact" },
             ].map((l) => (
               <li key={l.to}>
                 <Link to={l.to} className="hover:text-orange-500 transition">
@@ -72,12 +73,17 @@ const SiteFooter = () => {
           <h3 className="text-xs tracking-[0.3em] uppercase text-orange-500 mb-6">Policies</h3>
           <ul className="space-y-3 text-sm text-gray-600">
             {[
-              { to: "https://direct-book.com/properties/danakigalihotel/policies?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no", label: "Privacy Policy" },
+              { href: getBookingUrl('policies'), label: "Privacy Policy" },
             ].map((item) => (
-              <li key={item.to}>
-                <Link to={item.to} className="hover:text-orange-500 transition">
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-orange-500 transition"
+                >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

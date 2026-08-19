@@ -11,10 +11,11 @@ const roomSuperior = "/Danakigali-photos-023.jpg";
 
 
 const rooms = [
-  { img: roomDouble, name: "Deluxe Double room",beds: "1 double bed", guests: 2, baths: 1, cat: "double", tag: "Most loved" },
-  { img: roomDeluxe, name: "Deluxe Twin Room",beds: "2 twin beds", guests: 2, baths: 1, cat: "twin", tag: "Best value" },
-  { img: roomSuperior, name: "Family Room", beds: "3 beds", guests: 4, baths: 2, cat: "family", tag: "Spacious" },
+  { img: roomDouble, name: "Deluxe Double room", size: "24 m²", beds: "1 double bed", guests: 2, baths: 1, cat: "double", tag: "Most loved" },
+  { img: roomDeluxe, name: "Deluxe Twin Room",   size: "26 m²", beds: "2 twin beds",  guests: 2, baths: 1, cat: "twin",   tag: "Best value" },
+  { img: roomSuperior, name: "Family Room",       size: "42 m²", beds: "3 beds",       guests: 4, baths: 2, cat: "family", tag: "Spacious"   },
 ];
+
 
 const filters = [
   { id: "all", label: "All Rooms" },
