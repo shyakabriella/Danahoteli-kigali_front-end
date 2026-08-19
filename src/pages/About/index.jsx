@@ -6,9 +6,7 @@ import SiteFooter from "@/components/SiteFooter";
 const hero = "/Danakigali-photos-021.jpg";
 const terrace = "/Danakigali-photos-008.jpg";
 const dining = "/Danakigali-photos-011.jpg";
-const team1 = "/Danakigali-photos-013.jpg";
-const team2 = "/Danakigali-photos-014.jpg";
-const team3 = "/Danakigali-photos-015.jpg";
+
 
 const values = [
   { icon: Heart, title: "Kindness", text: "Inspired by Dana's spirit of warmth and care, we welcome every guest with genuine kindness." },
@@ -19,11 +17,6 @@ const values = [
   { icon: Gift, title: "Heritage", text: "Carrying forward a legacy of hospitality from the banks of the River Nile to Kigali." },
 ];
 
-const team = [
-  { img: team1, name: "Aminata Nkusi", role: "General Manager" },
-  { img: team2, name: "Jean-Paul Mugabe", role: "Executive Chef" },
-  { img: team3, name: "Fatima Hassan", role: "Guest Experience" },
-];
 
 const milestones = [
   { year: "1800s", text: "Dana is born in a Nubian village on the western bank of the River Nile in northern Sudan." },
@@ -107,6 +100,7 @@ const About = () => {
             <h2 className="font-display text-3xl md:text-4xl">The spirit of Dana, in everything we do.</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            {/* eslint-disable-next-line no-unused-vars */}
             {values.map(({ icon: Icon, title, text }) => (
               <div key={title} className="bg-background p-10">
                 <Icon className="w-10 h-10 text-gold mb-5" strokeWidth={1.5} />

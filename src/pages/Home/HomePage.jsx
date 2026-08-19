@@ -155,6 +155,7 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl">Days that linger in memory.</h2>
           </Reveal>
           <div className="grid md:grid-cols-3 gap-px bg-cream/10">
+            {/* eslint-disable-next-line no-unused-vars */}
             {experiences.map(({ icon: Icon, title, text }, i) => (
               <Reveal key={title} delay={i * 150} className="bg-navy-deep">
                 <div className="p-10 h-full group">
@@ -176,6 +177,7 @@ const Index = () => {
           <p className="text-muted-foreground">Everything that defines a perfect stay — quietly available, never imposed.</p>
         </Reveal>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-px bg-border">
+          {/* eslint-disable-next-line no-unused-vars */}
           {facilities.map(({ icon: Icon, label }, i) => (
             <Reveal key={label} delay={i * 80} animation="scale-in" className="bg-background">
               <div className="p-10 flex flex-col items-center text-center hover:bg-navy hover:text-cream transition-colors duration-500 group h-full">

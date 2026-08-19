@@ -4,6 +4,8 @@ import AppRoutes from "./routes/AppRoutes";
 import { AuthProvider } from "./contexts/AuthContext";
 import { ContentProvider } from "./contexts/ContentContext";
 
+
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 

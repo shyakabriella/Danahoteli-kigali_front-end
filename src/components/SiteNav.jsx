@@ -15,7 +15,7 @@ const links = [
   { to: "https://direct-book.com/properties/danakigalihotel/contact?locale=en&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&currency=USD&checkInDate=2026-06-13&checkOutDate=2026-06-14&trackPage=no", label: "Contact" },
 ];
 
-const SiteNav = ({ variant = "overlay" }) => {
+const SiteNav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -33,7 +33,6 @@ const SiteNav = ({ variant = "overlay" }) => {
     };
   }, []);
 
-  const isSolid = variant === "solid" || scrolled;
 
   return (
     <header

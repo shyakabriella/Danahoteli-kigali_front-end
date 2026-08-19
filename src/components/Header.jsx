@@ -69,9 +69,7 @@ export default function Header() {
     return () => window.removeEventListener("resize", closeOnResize);
   }, []);
 
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [location.pathname]);
+
 
   useEffect(() => {
     if (mobileOpen) {

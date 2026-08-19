@@ -8,8 +8,7 @@ const hero = "/Danakigali-photos-021.jpg";
 const roomDeluxe = "/Danakigali-photos-013.jpg";
 const roomDouble = "/Danakigali-photos-016.jpg";
 const roomSuperior = "/Danakigali-photos-023.jpg";
-const roomSingle = "/Danakigali-photos-024.jpg";
-const roomPenthouse = "/Danakigali-photos-024.jpg";
+
 
 const rooms = [
   { img: roomDouble, name: "Deluxe Double room",beds: "1 double bed", guests: 2, baths: 1, cat: "double", tag: "Most loved" },

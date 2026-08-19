@@ -75,6 +75,7 @@ const Contact = () => {
         </Reveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border">
+          {/* eslint-disable-next-line no-unused-vars */}
           {contactInfo.map(({ icon: Icon, title, lines }, idx) => (
             <Reveal key={title} delay={idx * 120}>
               <div className="bg-background p-10 h-full">
